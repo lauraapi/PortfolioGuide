@@ -1,3 +1,6 @@
+/* Importa il font Lato da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* Reset base */
 * {
     margin: 0;
@@ -6,26 +9,38 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif; /* cambia font da Arial a Lato */
     line-height: 1.6;
     background: #f5f5f5;
     color: #333;
 }
 
+/* Header rosa */
 header {
-    background: #4CAF50;
+    background: #ff69b4; /* rosa */
     color: white;
     padding: 2rem 1rem;
     text-align: center;
 }
 
+/* Link nel header in rosa chiaro o bianco? */
 header nav a {
-    color: white;
+    color: #ffe6f0; /* rosa chiaro, ma leggibile sul background rosa scuro */
     margin: 0 1rem;
     text-decoration: none;
 }
 
 header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Link generali in rosa */
+a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
@@ -59,7 +74,7 @@ section {
 
 .project a {
     margin-right: 1rem;
-    color: #4CAF50;
+    color: #ff69b4; /* link progetto in rosa */
     text-decoration: none;
 }
 
