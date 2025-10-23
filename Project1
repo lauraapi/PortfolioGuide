@@ -8,12 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>Project 1</h1>
+        <h1>Project 1 - Demo</h1>
         <a href="../../index.html">Back to Portfolio</a>
     </header>
 
     <main>
-        <p>This is the first project demo. Describe your work, technologies, and results here.</p>
+        <p>This is a demo project for your portfolio. Here you can describe:</p>
+        <ul>
+            <li>Project objectives</li>
+            <li>Technologies used</li>
+            <li>Challenges and solutions</li>
+            <li>Results or outcomes</li>
+        </ul>
         <img src="../../img/project1.png" alt="Project 1 Screenshot">
     </main>
 </body>
