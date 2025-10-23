@@ -1,52 +1,53 @@
 # 🌐 Portfolio — Laura Api
 
-Benvenuta/o nel mio portfolio professionale, ospitato su **GitHub Pages**.  
-➡️ [Visita il sito online](https://lauraapi.github.io/PortfolioGuide/)
+Welcome to my professional portfolio, hosted on **GitHub Pages**.  
+➡️ [Visit the live site](https://lauraapi.github.io/PortfolioGuide/)
 
 ---
 
-## 🧭 Descrizione
-Questo portfolio raccoglie alcuni dei miei progetti e lavori svolti in ambito **Business Administration**, **Market Research** e **Data Analysis**.  
-Il mio obiettivo è mostrare competenze in:
-- Analisi dei dati di mercato
-- Creazione di dashboard e visualizzazioni
-- Reportistica e insight per decisioni strategiche
+## 🧭 Overview
+This portfolio showcases selected projects and analyses developed during my studies and professional journey in **Business Administration**, **Market Research**, and **Data Analysis**.  
+
+My main focus areas include:
+- Market data collection and insight generation  
+- Dashboard design and KPI visualization  
+- Consumer behavior research and reporting  
 
 ---
 
-## 📂 Contenuti del repository
-| File/Cartella | Descrizione |
-|---------------|-------------|
-| `index.html` | Pagina principale del portfolio (HTML e CSS) |
-| `README.md` | Questo file: descrive il progetto |
-| `img/` *(opzionale)* | Immagini usate nel portfolio |
-| `data/` *(opzionale)* | Dataset o esempi di analisi |
+## 📂 Repository Structure
+| File/Folder | Description |
+|--------------|-------------|
+| `index.html` | Main portfolio webpage (HTML + CSS) |
+| `README.md` | Project documentation and overview |
+| `img/` *(optional)* | Images used in the portfolio |
+| `data/` *(optional)* | Datasets or analysis samples |
 
 ---
 
-## 💼 Progetti in evidenza
-- **Analisi del mercato cosmetico in Italia** — studio di segmentazione e insight sui comportamenti d’acquisto  
-- **Dashboard KPI vendite** — visualizzazione interattiva con Power BI  
-- **Analisi del sentiment social** — esplorazione dei feedback dei consumatori con Python
+## 💼 Featured Projects
+- **Cosmetics Market Analysis (Italy)** — segmentation and insights on consumer purchase behavior  
+- **Sales KPI Dashboard** — interactive Power BI dashboard for performance monitoring  
+- **Social Media Sentiment Analysis** — text analysis with Python to extract marketing insights  
 
 ---
 
-## 👩‍💼 Autrice
+## 👩‍💼 About Me
 **Laura Api**  
-🎓 Laurea in Business Administration  
-🎯 Aspirante *Market Researcher*  
+🎓 Master’s Degree in Business Administration  
+🎯 Aspiring *Market Researcher* and *Data Analyst*  
 
 📧 [lauraapi@email.com](mailto:lauraapi@email.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/lauraapi)
 
 ---
 
-## 🛠️ Tecnologie
+## 🛠️ Tools & Technologies
 - HTML, CSS  
 - Excel / Power BI  
 - Python (pandas, matplotlib)  
-- Google Sheets / Survey design tools
+- Google Sheets / Survey tools  
 
 ---
 
-> ✨ *Questo portfolio è pubblicato con GitHub Pages e aggiornato periodicamente con nuovi progetti.*
+> ✨ *This portfolio is hosted on GitHub Pages and regularly updated with new projects.*
