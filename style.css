@@ -23,9 +23,9 @@ header {
     text-align: center;
 }
 
-/* Link nel header in rosa chiaro o bianco? */
+/* Link nel header in rosa chiaro */
 header nav a {
-    color: #ffe6f0; /* rosa chiaro, ma leggibile sul background rosa scuro */
+    color: #ffe6f0; /* rosa chiaro, leggibile sul background rosa scuro */
     margin: 0 1rem;
     text-decoration: none;
 }
@@ -60,6 +60,17 @@ section {
     margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Effetto zig-zag dei progetti */
+.project:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 2rem; /* piccolo spostamento a destra */
+}
+
+.project:nth-child(even) {
+    margin-left: 2rem; /* piccolo spostamento a sinistra */
+    margin-right: 0;
 }
 
 .project img {
