@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Your Name</title>
+    <title>Project 1 - Laura</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     </header>
 
     <main>
-        <p>This is a demo description of Project 1. Include screenshots, technologies used, challenges, and results.</p>
-        <img src="../../img/project1.png" alt="Screenshot of Project 1">
+        <p>This is the first project demo. Describe your work, technologies, and results here.</p>
+        <img src="../../img/project1.png" alt="Project 1 Screenshot">
     </main>
 </body>
 </html>
