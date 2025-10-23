@@ -64,13 +64,13 @@ section {
 
 /* Effetto zig-zag dei progetti */
 .project:nth-child(odd) {
-    margin-left: 0;
-    margin-right: 2rem; /* piccolo spostamento a destra */
+    margin-left: 4rem;
+    margin-right: 0; /* piccolo spostamento a destra */
 }
 
 .project:nth-child(even) {
-    margin-left: 2rem; /* piccolo spostamento a sinistra */
-    margin-right: 0;
+    margin-left: 0; /* piccolo spostamento a sinistra */
+    margin-right: 4rem;
 }
 
 .project img {
