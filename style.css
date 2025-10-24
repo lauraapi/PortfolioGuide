@@ -1,3 +1,117 @@
+/* ===============================
+   Aesthetic & Interattivo CSS
+   Overlay sul CSS esistente
+   =============================== */
+
+/* Gradient Background Animato per il body */
+body {
+    background: linear-gradient(135deg, #ffe6f0, #ffb6c1, #ff69b4);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header: leggero effetto hover sui link */
+header nav a {
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: #ffdee6;
+    transform: translateY(-2px);
+}
+
+/* Bottoni e link progetto più interattivi */
+.project a {
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.project a:hover {
+    color: #ff1493;
+    transform: translateY(-3px);
+    border-bottom: 2px solid #ff69b4;
+}
+
+/* Card progetti: effetto hover */
+.project {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(255,105,180,0.3);
+}
+
+/* Titoli h3 con gradient text */
+.project h3 {
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1, #ffe6f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s;
+    background-size: 200% 200%;
+}
+
+.project h3:hover {
+    background-position: right center;
+}
+
+/* Fade-in al caricamento dei progetti */
+.project {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.project:nth-child(1) { animation-delay: 0.2s; }
+.project:nth-child(2) { animation-delay: 0.4s; }
+.project:nth-child(3) { animation-delay: 0.6s; }
+.project:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer aesthetic */
+footer {
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Aggiunta cursore custom (opzionale) */
+body {
+    cursor: pointer;
+}
+
+body a:hover {
+    cursor: pointer;
+}
 /*
 
 TemplateMo 599 Noir Fashion
