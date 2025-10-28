@@ -61,15 +61,16 @@ main {
     display: block;
 }
 
-/* Optional overlay se vuoi testo leggibile sopra */
-.hero-image::after {
+/* .hero-image::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.2); /* leggero filtro scuro */
+    background: rgba(0,0,0,0.2);
+} */
+
 }
 
 
