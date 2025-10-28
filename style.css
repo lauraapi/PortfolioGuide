@@ -45,6 +45,32 @@ main {
     margin: 2rem auto;
     padding: 0 1rem;
 }
+/* Hero image full width */
+.hero-image {
+    width: 100%;
+    height: 100vh; /* occupa tutta l'altezza della finestra */
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantiene le proporzioni, coprendo tutto */
+    display: block;
+}
+
+/* Opzionale: overlay per testo sopra l'immagine */
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); /* leggero filtro scuro se vuoi testo leggibile sopra */
+}
+
 
 /* About Me Section */
 .about-me {
