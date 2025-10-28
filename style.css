@@ -15,14 +15,14 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
-    background: #ff4da6;
-    color: white;
+    background: #f4c5d5; /* nuovo rosa chiaro */
+    color: #333; /* testo più scuro per contrasto */
     padding: 3rem 1rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
 
 header h1 {
     font-size: 2.5rem;
