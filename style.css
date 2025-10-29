@@ -38,10 +38,15 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content */
+/* Main content centrato verticalmente */
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente About Me */
+    align-items: center; /* centra orizzontalmente */
+    min-height: 80vh; /* prende almeno l’80% dell’altezza del viewport */
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
 }
 
@@ -62,12 +67,12 @@ main {
 
 /* About Me Section */
 .about-me {
-    text-align: center; /* center text */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center horizontally */
-    justify-content: center; /* center vertically if height set */
-    margin: 6rem auto; /* aumentato per spostare la sezione più centrale */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* margini verticali azzerati, centratura fatta dal main */
     padding: 2rem 1rem;
     max-width: 800px;
     background: #fff;
