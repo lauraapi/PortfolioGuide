@@ -16,12 +16,13 @@ body {
 }
 
 header {
-    background: #f4c5d5; /* nuovo rosa chiaro */
-    color: #333; /* testo più scuro per contrasto */
+    background: transparent; /* elimina il rosa */
+    color: #333;
     padding: 3rem 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
 
 header h1 {
     font-size: 2.5rem;
