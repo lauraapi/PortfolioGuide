@@ -53,7 +53,7 @@ main {
 /* Hero banner compatto */
 .hero-image {
     width: 100%;
-    height: 450px; /* altezza compatta, puoi modificare */
+    height: 480px; /* altezza compatta, puoi modificare */
     overflow: hidden;
     position: relative;
 }
