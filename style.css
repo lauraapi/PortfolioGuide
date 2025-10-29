@@ -1,11 +1,73 @@
+/* Import Lato from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background: #fdf7fb; /* soft pinkish-white background */
+    color: #333;
+}
+
+header {
+    background: #f4c5d5; /* nuovo rosa chiaro */
+    color: #333; /* testo più scuro per contrasto */
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Hero banner compatto */
+.hero-image {
+    width: 100%;
+    height: 450px; /* altezza compatta, puoi modificare */
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image .hero-img {
+    width: 100%;
+    height: 300%;
+    object-fit: cover; /* copre tutta la larghezza senza deformare */
+    display: block;
+}
+
 /* About Me Section */
 .about-me {
-    text-align: center; /* centro testo */
+    text-align: center; /* center text */
     display: flex;
     flex-direction: column;
-    align-items: center; /* centro orizzontalmente */
-    justify-content: center; /* centro verticalmente se necessario */
-    margin: 4rem auto;
+    align-items: center; /* center horizontally */
+    justify-content: center; /* center vertically if height set */
+    margin: 6rem auto; /* aumentato per spostare la sezione più centrale */
     padding: 2rem 1rem;
     max-width: 800px;
     background: #fff;
@@ -13,43 +75,50 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.about-me h2,
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff4da6;
+}
+
 .about-me p {
-    text-align: center; /* assicura che tutto il testo sia centrato */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 600px;
 }
 
 /* Project Section */
 .project {
-    text-align: center; /* centro testo titoli e link */
-    display: flex;
-    flex-direction: column; /* i progetti uno sotto l'altro */
-    align-items: center; /* centro immagini */
-    justify-content: center;
+    text-align: center;
     margin: 2rem auto;
     max-width: 800px;
 }
 
 .project-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; /* optimal for horizontal images */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     display: block;
-    margin: 0 auto 1rem auto; /* centra l'immagine */
+    margin: 0 auto 1rem auto;
+}
+
+.project a:hover .project-img {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .project-title {
     color: #ff4da6;
     margin: 0.5rem 0 1rem 0;
     transition: color 0.3s;
-    text-align: center; /* centra titolo */
 }
 
-/* Optional: centratura dei link o descrizioni sotto progetto */
-.project a {
-    display: inline-block; /* rende hover più facile da gestire */
-    text-align: center;
+.project a:hover .project-title {
+    color: #e6007e;
+    text-decoration: underline;
 }
 
 /* Responsive adjustments */
