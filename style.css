@@ -105,8 +105,8 @@ main {
 }
 
 .project-img {
-    width: auto; /* mantiene le proporzioni reali */
-    max-width: 400px; /* dimensione massima più piccola */
+    width: 100%; /* mantiene le proporzioni reali */
+    max-width: 600px; /* dimensione massima più piccola */
     height: auto; 
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
