@@ -105,37 +105,35 @@ main {
 /* Project Section */
 .project {
     text-align: center;
-    margin-left: 50px;
-    margin-right: auto; /* mantiene centratura relativa al nuovo left */
+    margin: 2rem auto; /* centered container */
     max-width: 800px;
 }
 
-}
-
+/* Project Images */
 .project-img {
-    width: auto; /* mantiene le proporzioni reali */
-    max-width: 400px; /* dimensione massima più piccola */
-    height: auto; 
+    display: block;
+    width: auto;          /* natural width, no stretching */
+    max-width: 400px;     /* compact size */
+    height: auto;         /* maintain aspect ratio */
+    margin: 0 auto 1rem;  /* center horizontally, add bottom spacing */
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    display: block;
-    margin: 0 auto 1rem auto; /* centra l’immagine */
 }
 
-}
-
-
+/* Hover effect on image */
 .project a:hover .project-img {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* Project Titles */
 .project-title {
     color: #ff4da6;
     margin: 0.5rem 0 1rem 0;
     transition: color 0.3s;
 }
 
+/* Hover effect on title */
 .project a:hover .project-title {
     color: #e6007e;
     text-decoration: underline;
@@ -144,8 +142,10 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-img {
-        max-width: 100%;
+        max-width: 90%; /* scale down images on smaller screens */
     }
+}
+
     .about-me {
         margin: 2rem 1rem;
         padding: 1.5rem 1rem;
