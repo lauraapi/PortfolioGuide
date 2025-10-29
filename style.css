@@ -16,24 +16,32 @@ body {
 }
 
 header {
-    background: transparent; /* elimina il rosa */
-    color: #333;
-    padding: 3rem 1rem;
-    text-align: center;
+    position: relative; /* necessario per posizionare l'immagine */
+    height: 480px; /* puoi regolare l’altezza */
+    width: 100%;
+    padding: 0; /* togli padding per evitare spazi */
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden; /* nasconde eventuali parti in eccesso */
 }
 
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+header .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* copre tutto il container senza deformare */
+    z-index: -1; /* mette l’immagine dietro il testo */
 }
 
-header nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
+header h1,
+header nav {
+    position: relative; /* sopra l’immagine */
+    color: white; /* testo leggibile sopra l’immagine */
+    text-align: center;
+    padding-top: 2rem; /* eventuale margine dall’alto */
 }
+
 
 header nav a:hover {
     text-decoration: underline;
