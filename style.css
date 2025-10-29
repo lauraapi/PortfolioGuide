@@ -102,38 +102,52 @@ main {
     max-width: 600px;
 }
 
-/* Project Section */
+/* Projects Section */
+#projects > h2:first-of-type {
+    font-size: 1.8rem;      /* slightly smaller */
+    text-align: center;      /* center heading */
+    margin-bottom: 1.5rem;
+}
+
+#projects h2:not(:first-of-type) {
+    font-size: 1.6rem;
+    text-align: center;      /* center sub-headings */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Project container */
 .project {
-    text-align: center;
-    margin: 2rem auto; /* centered container */
+    text-align: center;      /* center all content inside */
+    margin: 2rem auto;
     max-width: 800px;
 }
 
-/* Project Images */
+/* Project images */
 .project-img {
     display: block;
-    width: auto;          /* natural width, no stretching */
-    max-width: 400px;     /* compact size */
-    height: auto;         /* maintain aspect ratio */
-    margin: 0 auto 1rem;  /* center horizontally, add bottom spacing */
+    width: auto;
+    max-width: 400px;        /* compact size */
+    height: auto;
+    margin: 0 auto 1rem;     /* center horizontally */
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect on image */
+/* Hover effect on images */
 .project a:hover .project-img {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Project Titles */
+/* Project titles */
 .project-title {
     color: #ff4da6;
     margin: 0.5rem 0 1rem 0;
     transition: color 0.3s;
 }
 
-/* Hover effect on title */
+/* Hover effect on titles */
 .project a:hover .project-title {
     color: #e6007e;
     text-decoration: underline;
@@ -142,12 +156,6 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-img {
-        max-width: 90%; /* scale down images on smaller screens */
-    }
-}
-
-    .about-me {
-        margin: 2rem 1rem;
-        padding: 1.5rem 1rem;
+        max-width: 90%; /* scales nicely on smaller screens */
     }
 }
