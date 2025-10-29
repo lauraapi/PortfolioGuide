@@ -16,12 +16,12 @@ body {
 }
 
 header {
-    position: relative; /* necessario per posizionare l'immagine */
-    height: 480px; /* puoi regolare l’altezza */
+    position: relative; /* necessary for positioning the image */
+    height: 480px; /* adjust height */
     width: 100%;
-    padding: 0; /* togli padding per evitare spazi */
+    padding: 0; /* remove padding */
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    overflow: hidden; /* nasconde eventuali parti in eccesso */
+    overflow: hidden;
 }
 
 header .header-img {
@@ -30,101 +30,110 @@ header .header-img {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* copre tutto il container senza deformare */
-    z-index: -1; /* mette l’immagine dietro il testo */
+    object-fit: cover;
+    z-index: -1;
 }
 
 header h1,
 header nav {
-    position: relative; /* sopra l’immagine */
-    color: white; /* testo leggibile sopra l’immagine */
+    position: relative;
+    color: white;
     text-align: center;
-    padding-top: 2rem; /* eventuale margine dall’alto */
+    padding-top: 2rem;
 }
-
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content centrato verticalmente */
+/* Main content */
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centra verticalmente About Me */
-    align-items: center; /* centra orizzontalmente */
-    min-height: 80vh; /* prende almeno l’80% dell’altezza del viewport */
+    align-items: center;      /* center sections horizontally */
+    justify-content: flex-start; /* stack sections from top */
+    min-height: auto;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
 }
 
 /* Hero banner compact but responsive */
 .hero-image {
     width: 100%;
-    height: 60vh;                 /* height adjusts with viewport */
-    min-height: 400px;            /* ensures it's not too small on small screens */
-    max-height: 600px;            /* optional, prevents it from getting too tall */
-    background-color: #fdf7fb;    /* soft pink fallback for extra space */
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
+    background-color: #fdf7fb; /* soft pink fallback */
     overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: center;      /* center image horizontally */
-    align-items: center;          /* center image vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image .hero-img {
-    width: 100%;                  /* fill horizontally */
-    height: auto;                 /* maintain aspect ratio */
-    max-height: 100%;             /* never exceed container height */
-    object-fit: contain;          /* keeps full image visible */
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-/* About Me Section */
-.about-me {
-    text-align: center;
+/* About Me Section fully centered */
+.about-me,
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* margini verticali azzerati, centratura fatta dal main */
-    padding: 2rem 1rem;
+    text-align: center;
     max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.about-me h2 {
+.about-me h2,
+#about h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #ff4da6;
 }
 
-.about-me p {
+.about-me p,
+#about p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
     max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.center-page {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 /* Projects Section */
 #projects > h2:first-of-type {
-    font-size: 1.8rem;      /* slightly smaller */
-    text-align: center;      /* center heading */
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 #projects h2:not(:first-of-type) {
     font-size: 1.6rem;
-    text-align: center;      /* center sub-headings */
+    text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 /* Project container */
 .project {
-    text-align: center;      /* center all content inside */
+    text-align: center;
     margin: 2rem auto;
     max-width: 800px;
 }
@@ -133,9 +142,9 @@ main {
 .project-img {
     display: block;
     width: auto;
-    max-width: 600px;        /* compact size */
+    max-width: 600px; /* keeps images compact */
     height: auto;
-    margin: 0 auto 1rem;     /* center horizontally */
+    margin: 0 auto 1rem;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -153,7 +162,6 @@ main {
     transition: color 0.3s;
 }
 
-/* Hover effect on titles */
 .project a:hover .project-title {
     color: #e6007e;
     text-decoration: underline;
@@ -162,6 +170,13 @@ main {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-img {
-        max-width: 90%; /* scales nicely on smaller screens */
+        max-width: 90%;
+    }
+    .about-me,
+    #about,
+    #projects {
+        width: 95%;
+        margin: 1.5rem auto;
+        padding: 1.5rem 1rem;
     }
 }
