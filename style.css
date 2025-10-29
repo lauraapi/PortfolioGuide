@@ -133,7 +133,7 @@ main {
 .project-img {
     display: block;
     width: auto;
-    max-width: 400px;        /* compact size */
+    max-width: 600px;        /* compact size */
     height: auto;
     margin: 0 auto 1rem;     /* center horizontally */
     border-radius: 10px;
