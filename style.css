@@ -96,8 +96,11 @@ main {
 /* Project Section */
 .project {
     text-align: center;
-    margin: 2rem auto;
+    margin-left: 50px;
+    margin-right: auto; /* mantiene centratura relativa al nuovo left */
     max-width: 800px;
+}
+
 }
 
 .project-img {
