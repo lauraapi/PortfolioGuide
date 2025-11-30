@@ -235,3 +235,19 @@ main {
     object-fit: cover;
     display: block;
 }
+
+<header class="top-hero">
+    <img 
+        src="img/hero-1600.png" 
+        srcset="
+            img/hero-600.png 600w,
+            img/hero-1000.png 1000w,
+            img/hero-1600.png 1600w,
+            img/hero-2200.png 2200w
+        "
+        sizes="100vw"
+        alt="Portfolio Hero"
+        class="top-hero-img"
+    >
+</header>
+
