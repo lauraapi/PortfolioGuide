@@ -1,7 +1,7 @@
-/* Import Lato from Google Fonts */
+/* UPDATED CSS WITH REMOVED HERO + ABOUT ME SIDE-BY-SIDE FULL-WIDTH BACKGROUND */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-/* Reset base */
 * {
     margin: 0;
     padding: 0;
@@ -11,152 +11,93 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    background: #fdf7fb; /* soft pinkish-white background */
+    background: #fdf7fb;
     color: #333;
 }
 
+/* REMOVE HERO ENTIRELY */
+.hero-image { display: none !important; }
+
+/* HEADER SHRINKED */
 header {
-    position: relative; /* necessary for positioning the image */
-    height: 480px; /* adjust height */
-    width: 100%;
-    padding: 0; /* remove padding */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    overflow: hidden;
+    height: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-header .header-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-header h1,
-header nav {
-    position: relative;
-    color: white;
-    text-align: center;
-    padding-top: 2rem;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main content */
+/* MAIN CONTAINER */
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;      /* center sections horizontally */
-    justify-content: flex-start; /* stack sections from top */
-    min-height: auto;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
 }
 
-/* Hero banner compact but responsive */
-.hero-image {
-    width: 100%;
-    height: 60vh;
-    min-height: 400px;
-    max-height: 700px;
-    background-color: #fdf7fb; /* soft pink fallback */
-    overflow: hidden;
-    position: relative;
+/* ABOUT ME FULL-WIDTH BACKGROUND + SIDE IMAGE */
+.about-section {
+    width: 100vw;
+    margin-left: 50%; /* trick to break out of centered container */
+    transform: translateX(-50%);
+    background: #fff; /* background from your old about box */
+    padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
-.hero-image .hero-img {
-    width: 100%;
+.about-content {
+    max-width: 550px;
+}
+
+.about-section img {
+    width: 330px;
     height: auto;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-
-/* About Me Section fully centered */
-.about-me,
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-    margin: 2rem auto;
-    padding: 2rem 1rem;
-    background: #fff;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.about-me h2,
-#about h2 {
+.about-section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #ff4da6;
 }
 
-.about-me p,
-#about p {
+.about-section p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
-    max-width: 600px;
-    margin-bottom: 1rem;
 }
 
-.center-page {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-/* Projects Section */
+/* PROJECTS */
 #projects > h2:first-of-type {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-#projects h2:not(:first-of-type) {
-    font-size: 1.6rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-/* Project container */
 .project {
     text-align: center;
     margin: 2rem auto;
     max-width: 800px;
 }
 
-/* Project images */
 .project-img {
     display: block;
-    width: auto;
-    max-width: 600px; /* keeps images compact */
-    height: auto;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto 1rem;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect on images */
 .project a:hover .project-img {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Project titles */
 .project-title {
     color: #ff4da6;
     margin: 0.5rem 0 1rem 0;
@@ -168,16 +109,15 @@ main {
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .project-img {
-        max-width: 90%;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
     }
-    .about-me,
-    #about,
-    #projects {
-        width: 95%;
-        margin: 1.5rem auto;
-        padding: 1.5rem 1rem;
+
+    .about-section img {
+        width: 280px;
     }
 }
