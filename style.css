@@ -1,4 +1,4 @@
-/* UPDATED CSS: MAKE ABOUT ME IMAGE BIGGER */
+/* UPDATED CSS: ABOUT ME SECTION AS HEADER, SHORTER HEIGHT, MORE HORIZONTAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -29,11 +29,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
 }
 
+/* ABOUT SECTION AS HEADER */
 .about-section {
     width: 100%;
     background: #fff;
@@ -41,13 +42,14 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
-    padding: 3rem 5%;
+    gap: 3rem;
+    padding: 2rem 5%; /* reduced vertical padding for shorter height */
+    min-height: 250px; /* optional minimum height */
 }
 
 .about-section img {
     width: auto;
-    max-width: 500px; /* increased from 350px */
+    max-width: 500px;
     height: auto;
     border-radius: 0;
     box-shadow: none;
@@ -55,19 +57,20 @@ main {
 }
 
 .about-content {
-    max-width: 600px;
+    max-width: 800px; /* more horizontal stretch */
     flex: 1;
+    margin-left: 2rem;
 }
 
 .about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
     color: #ff4da6;
 }
 
 .about-section p {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.6;
     color: #555;
 }
 
@@ -113,14 +116,16 @@ main {
         flex-direction: row;
         justify-content: center;
         gap: 1.5rem;
-        padding: 2rem 3%;
+        padding: 1.5rem 3%;
+        min-height: auto;
     }
 
     .about-section img {
-        max-width: 300px; /* increased from 200px */
+        max-width: 300px;
     }
 
     .about-content {
         max-width: 400px;
+        margin-left: 1rem;
     }
 }
