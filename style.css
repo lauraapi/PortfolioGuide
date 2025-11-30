@@ -1,4 +1,4 @@
-/* UPDATED CSS: ABOUT SECTION CENTERED WITH IMAGE ON LEFT */
+/* UPDATED CSS: IMAGE BLENDS WITH ABOUT ME BACKGROUND, FULL-WIDTH SECTION */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -37,23 +37,24 @@ main {
     padding: 0 1rem;
 }
 
-/* ABOUT ME FULL-WIDTH BACKGROUND + IMAGE ON LEFT */
+/* ABOUT SECTION FULL WIDTH */
 .about-section {
     width: 100%;
-    background: #fff;
-    padding: 3rem 2rem;
+    background: #fff; /* full-width background */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 3rem 5%; /* side padding */
 }
 
 .about-section img {
-    width: 250px;
+    width: auto;
+    max-width: 350px;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-radius: 0; /* remove square/rounded shadow */
+    box-shadow: none; /* remove shadow */
     flex-shrink: 0;
 }
 
@@ -117,12 +118,12 @@ main {
     .about-section {
         flex-direction: row;
         justify-content: center;
-        gap: 2rem;
-        padding: 2rem 1rem;
+        gap: 1.5rem;
+        padding: 2rem 3%;
     }
 
     .about-section img {
-        width: 180px;
+        max-width: 200px;
     }
 
     .about-content {
