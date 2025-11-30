@@ -224,17 +224,16 @@ main {
 /* ===== SINGLE FULL-WIDTH HERO IMAGE ===== */
 .top-hero {
     width: 100%;
-    height: auto;
-    max-height: 90vh;        /* keeps it visible but not too tall */
     overflow: hidden;
 }
 
 .top-hero-img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: auto;    /* keeps proportions */
+    object-fit: contain;  /* ensures full image is visible */
     display: block;
 }
+
 
 <header class="top-hero">
     <img 
