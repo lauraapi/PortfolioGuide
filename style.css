@@ -222,17 +222,22 @@ main {
 }
 
 /* ===== SINGLE FULL-WIDTH HERO IMAGE ===== */
+/* HERO WRAPPER */
 .top-hero {
     width: 100%;
+    display: flex;
+    justify-content: flex-end; /* aligns the image to the right edge */
     overflow: hidden;
 }
 
+/* HERO IMAGE */
 .top-hero-img {
     width: 100%;
-    height: auto;    /* keeps proportions */
+    height: auto;      /* keeps proportions */
     object-fit: contain;  /* ensures full image is visible */
     display: block;
 }
+
 
 
 <header class="top-hero">
