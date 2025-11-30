@@ -1,4 +1,4 @@
-/* UPDATED CSS: IMAGE BLENDS WITH ABOUT ME BACKGROUND, FULL-WIDTH SECTION */
+/* UPDATED CSS: MAKE ABOUT ME IMAGE BIGGER */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -15,10 +15,8 @@ body {
     color: #333;
 }
 
-/* REMOVE HERO ENTIRELY */
 .hero-image { display: none !important; }
 
-/* HEADER SHRINKED */
 header {
     height: 0;
     padding: 0;
@@ -27,7 +25,6 @@ header {
     display: none;
 }
 
-/* MAIN CONTAINER */
 main {
     display: flex;
     flex-direction: column;
@@ -37,24 +34,23 @@ main {
     padding: 0 1rem;
 }
 
-/* ABOUT SECTION FULL WIDTH */
 .about-section {
     width: 100%;
-    background: #fff; /* full-width background */
+    background: #fff;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-    padding: 3rem 5%; /* side padding */
+    padding: 3rem 5%;
 }
 
 .about-section img {
     width: auto;
-    max-width: 350px;
+    max-width: 500px; /* increased from 350px */
     height: auto;
-    border-radius: 0; /* remove square/rounded shadow */
-    box-shadow: none; /* remove shadow */
+    border-radius: 0;
+    box-shadow: none;
     flex-shrink: 0;
 }
 
@@ -75,7 +71,6 @@ main {
     color: #555;
 }
 
-/* PROJECTS */
 #projects > h2:first-of-type {
     font-size: 1.8rem;
     text-align: center;
@@ -113,7 +108,6 @@ main {
     text-decoration: underline;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .about-section {
         flex-direction: row;
@@ -123,7 +117,7 @@ main {
     }
 
     .about-section img {
-        max-width: 200px;
+        max-width: 300px; /* increased from 200px */
     }
 
     .about-content {
