@@ -1,4 +1,4 @@
-/* UPDATED CSS WITH REMOVED HERO + ABOUT ME SIDE-BY-SIDE FULL-WIDTH BACKGROUND */
+/* UPDATED CSS: ABOUT SECTION CENTERED WITH IMAGE ON LEFT */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -24,7 +24,7 @@ header {
     padding: 0;
     margin: 0;
     overflow: hidden;
-    display: none; /* fully remove header space */
+    display: none;
 }
 
 /* MAIN CONTAINER */
@@ -34,31 +34,32 @@ main {
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
-/* ABOUT ME FULL-WIDTH BACKGROUND + SIDE IMAGE */
+/* ABOUT ME FULL-WIDTH BACKGROUND + IMAGE ON LEFT */
 .about-section {
-    width: 100vw;
-    margin-left: 50%; /* trick to break out of centered container */
-    transform: translateX(-50%);
-    background: #fff; /* background from your old about box */
+    width: 100%;
+    background: #fff;
     padding: 3rem 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 3rem;
 }
 
-.about-content {
-    max-width: 550px;
-}
-
 .about-section img {
-    width: 330px;
+    width: 250px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+}
+
+.about-content {
+    max-width: 600px;
+    flex: 1;
 }
 
 .about-section h2 {
@@ -114,12 +115,17 @@ main {
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .about-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
 
     .about-section img {
-        width: 280px;
+        width: 180px;
+    }
+
+    .about-content {
+        max-width: 400px;
     }
 }
